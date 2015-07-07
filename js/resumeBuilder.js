@@ -19,7 +19,7 @@ var bio = {
         var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
         var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-        var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcome);
+        var formattedwelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcome);
 
         // Write formatted data in the header
         $("#header").append(formattedName);
@@ -194,8 +194,8 @@ var projects = {
     }
 };
 
-// Set up the function for displaying all above content
-$(document).ready(function() {
+// // Set up the function for displaying all above content
+// $(document).ready(function() {
     // Call display function for bio
     bio.display();
 
@@ -207,4 +207,6 @@ $(document).ready(function() {
 
     // Call display function for projects
     projects.display();
-});
+// });
+
+    $("#mapDiv").append(googleMap);
